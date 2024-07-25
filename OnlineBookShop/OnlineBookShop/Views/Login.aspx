@@ -29,7 +29,7 @@
                         
                         <div class="mt-3">
                             <label for="" class="form-label">Password</label>
-                            <input type="password" placeholder="User Name" autocomplete="off" class="form-control" />
+                            <input type="password" placeholder="Password" autocomplete="off" class="form-control" />
                         </div>
                         
                         <div class="mt-3 d-grid">

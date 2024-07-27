@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>D:\桌面\release\OnlineBookShop_release</_PublishTargetUrl>
-    <History>True|2024-07-26T01:37:09.2485150Z;True|2024-07-25T18:28:30.1753989+08:00;</History>
+    <History>True|2024-07-26T05:30:33.1538647Z;True|2024-07-26T09:37:09.2485150+08:00;True|2024-07-25T18:28:30.1753989+08:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Assets/Lib/css/bootstrap-grid.css">
@@ -144,10 +144,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/05/2018 16:10:50</publishTime>
     </File>
     <File Include="bin/OnlineBookShop.dll">
-      <publishTime>07/26/2024 09:37:08</publishTime>
+      <publishTime>07/26/2024 13:30:32</publishTime>
     </File>
     <File Include="bin/OnlineBookShop.pdb">
-      <publishTime>07/26/2024 09:37:08</publishTime>
+      <publishTime>07/26/2024 13:30:32</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2018 05:38:48</publishTime>
@@ -303,7 +303,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/25/2024 19:12:51</publishTime>
     </File>
     <File Include="Views/Admin/Author.aspx">
-      <publishTime>07/26/2024 09:25:27</publishTime>
+      <publishTime>07/26/2024 11:39:00</publishTime>
     </File>
     <File Include="Views/Admin/Books.aspx">
       <publishTime>07/25/2024 19:58:44</publishTime>

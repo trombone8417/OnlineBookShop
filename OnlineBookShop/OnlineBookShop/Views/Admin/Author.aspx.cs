@@ -58,8 +58,13 @@ namespace OnlineBookShop.Views.Admin
         protected void AuthorsList_SelectedIndexChanged(object sender, EventArgs e)
         {
             ANameTb.Value = AuthorsList.SelectedRow.Cells[2].Text;
-            GenCb.SelectedItem.Value = AuthorsList.SelectedRow.Cells[3].Text;
-            CountryCb.SelectedItem.Value = AuthorsList.SelectedRow.Cells[4].Text;
+            /**
+             * 參考資料:https://kevintsengtw.blogspot.com/2010/09/listitemselectedindexexdropdownlistitem.html
+             */
+            //GenCb.SelectedItem.Value = AuthorsList.SelectedRow.Cells[3].Text;
+            GenCb.SelectedIndex = GenCb.Items.IndexOf(GenCb.Items.FindByValue(AuthorsList.SelectedRow.Cells[3].Text));
+            //CountryCb.SelectedItem.Value = AuthorsList.SelectedRow.Cells[4].Text;
+            CountryCb.SelectedIndex = CountryCb.Items.IndexOf(CountryCb.Items.FindByValue(AuthorsList.SelectedRow.Cells[4].Text));
             if (ANameTb.Value =="")
             {
                 Key = 0;

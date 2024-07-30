@@ -89,7 +89,7 @@ namespace OnlineBookShop.Views.Admin
                     string SPhone = PhoneTb.Value;
                     string SAdd = AddressTb.Value;
 
-                    string Query = "Update SellerTbl set SelName = '{0}', SelEmail = '{1}',SelPhone = '{2}',SelAddress = '{3}' where SelId = {4}";
+                    string Query = "Update SellerTbl set SelName = '{0}', SelEmail = '{1}',SelPhone = '{2}',SelPass = '{3}' where SelId = {4}";
                     Query = string.Format(Query, SName, SEmail, SPhone, SAdd, SellerList.SelectedRow.Cells[1].Text);
                     Con.SetData(Query);
                     ShowSeller();

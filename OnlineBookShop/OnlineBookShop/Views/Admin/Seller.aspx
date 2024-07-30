@@ -23,8 +23,8 @@
                     <input type="text" placeholder="Phone Number" runat="server" id="PhoneTb"  autocomplete="off" class="form-control" />
                 </div>
                 <div class="mb-3">
-                    <label for="" class="form-label text-success">Seller Address</label>
-                    <input type="text" placeholder="Address" runat="server" id="AddressTb"  autocomplete="off" class="form-control" />
+                    <label for="" class="form-label text-success">Seller Password</label>
+                    <input type="password" placeholder="Password" runat="server" id="AddressTb"  autocomplete="off" class="form-control" />
                 </div>
                 <div class="row">
                     <asp:Label ID="ErrMsg" runat="server" class="text-danger"></asp:Label>

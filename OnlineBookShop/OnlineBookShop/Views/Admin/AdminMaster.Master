@@ -42,7 +42,7 @@
                             <a href="Categories.aspx"><label>Categories</label></a>
                         </div>
                         <div class="mb-3">
-                            <a href="#"><label>Logout</label></a>
+                            <a href="../Login.aspx"><label>Logout</label></a>
                         </div>
                     </div>
                     

@@ -95,6 +95,7 @@
     <Content Include="Views\Admin\Categories.aspx" />
     <Content Include="Views\Admin\Seller.aspx" />
     <Content Include="Views\Login.aspx" />
+    <Content Include="Views\Seller\Selling.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +146,20 @@
     <Compile Include="Views\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Seller\SellerMaster.Master.cs">
+      <DependentUpon>SellerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Seller\SellerMaster.Master.designer.cs">
+      <DependentUpon>SellerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Seller\Selling.aspx.cs">
+      <DependentUpon>Selling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Seller\Selling.aspx.designer.cs">
+      <DependentUpon>Selling.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Lib\css\bootstrap-grid.css.map" />
@@ -171,6 +186,7 @@
     <Content Include="Assets\Lib\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <Content Include="Views\Admin\AdminMaster.Master" />
+    <Content Include="Views\Seller\SellerMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -181,7 +197,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\Images\" />
-    <Folder Include="Views\Seller\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

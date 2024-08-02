@@ -15,40 +15,49 @@ namespace OnlineBookShop.Views.Seller
     {
 
         /// <summary>
-        /// UNameTb 控制項。
+        /// BNameTb 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl UNameTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl BNameTb;
 
         /// <summary>
-        /// Email1 控制項。
+        /// BPriceTb 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Email1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl BPriceTb;
 
         /// <summary>
-        /// Email2 控制項。
+        /// BQtyTb 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Email2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl BQtyTb;
 
         /// <summary>
-        /// Email3 控制項。
+        /// DateTb 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Email3;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl DateTb;
+
+        /// <summary>
+        /// AddToBillBtn 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AddToBillBtn;
 
         /// <summary>
         /// SellingList 控制項。
@@ -58,5 +67,23 @@ namespace OnlineBookShop.Views.Seller
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView SellingList;
+
+        /// <summary>
+        /// BillList 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView BillList;
+
+        /// <summary>
+        /// PrintBtn 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button PrintBtn;
     }
 }

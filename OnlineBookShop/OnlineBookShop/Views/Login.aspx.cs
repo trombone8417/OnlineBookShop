@@ -42,7 +42,7 @@ namespace OnlineBookShop.Views
                 {
                     UName = UNameTb.Value;
                     User = Convert.ToInt32(dt.Rows[0][0].ToString());
-                    //Response.Redirect("/Seller/");
+                    Response.Redirect("Seller/Selling.aspx");
                 }
             }
         }

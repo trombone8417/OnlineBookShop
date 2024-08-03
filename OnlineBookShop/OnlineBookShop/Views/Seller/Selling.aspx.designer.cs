@@ -21,7 +21,7 @@ namespace OnlineBookShop.Views.Seller
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl BNameTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText BNameTb;
 
         /// <summary>
         /// BPriceTb 控制項。
@@ -30,7 +30,7 @@ namespace OnlineBookShop.Views.Seller
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl BPriceTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText BPriceTb;
 
         /// <summary>
         /// BQtyTb 控制項。
@@ -39,7 +39,7 @@ namespace OnlineBookShop.Views.Seller
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl BQtyTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText BQtyTb;
 
         /// <summary>
         /// DateTb 控制項。
@@ -76,6 +76,15 @@ namespace OnlineBookShop.Views.Seller
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView BillList;
+
+        /// <summary>
+        /// GrdtotalTb 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label GrdtotalTb;
 
         /// <summary>
         /// PrintBtn 控制項。

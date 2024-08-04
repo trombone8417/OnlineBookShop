@@ -62,7 +62,7 @@
         <div class="col-md-7">
             <h3 class="form-label text-danger">Client's Bill</h3>
                  <div class="col">
-                     <asp:GridView ID="BillList" runat="server" class="table table-bordered" AutoGenerateSelectButton="True" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="BillList_SelectedIndexChanged">
+                     <asp:GridView ID="BillList" runat="server" class="table table-bordered" CellPadding="4" ForeColor="#333333" GridLines="None" >
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#7C6F57" />
                     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -78,7 +78,7 @@
                      <div class="col d-grid">
                          
                      <asp:Label ID="GrdtotalTb" runat="server" class="text-danger"></asp:Label>
-                         <asp:Button Text="Print" runat="server" ID="PrintBtn" class="btn-warning btn-block btn" />
+                         <asp:Button Text="Print" runat="server" ID="PrintBtn" class="btn-warning btn-block btn" OnClick="PrintBtn_Click" />
                      </div>
                  </div>
         </div>

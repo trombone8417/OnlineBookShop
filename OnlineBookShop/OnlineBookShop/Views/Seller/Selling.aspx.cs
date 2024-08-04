@@ -11,6 +11,8 @@ namespace OnlineBookShop.Views.Seller
     public partial class Selling : System.Web.UI.Page
     {
         Models.Functions Con;
+        int Seller = Login.User;
+        string SName = Login.UName;
         protected void Page_Load(object sender, EventArgs e)
         {
             Con = new Models.Functions();
@@ -63,10 +65,27 @@ namespace OnlineBookShop.Views.Seller
             
         }
 
-        protected void BillList_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+        private void UpdateStock()
+        {
+            int NewQty;
+            NewQty = Convert.ToInt32(SellingList.SelectedRow.Cells[3].Text) - Convert.ToInt32(BQtyTb.Value);
+
+            string Query = "update BookTbl set BQty = {0} where BId = {1}";
+            Query = string.Format(Query, NewQty, SellingList.SelectedRow.Cells[1].Text);
+            Con.SetData(Query);
+            ShowBooks();
         }
+
+        private void InsertBill()
+        {
+            
+                string Query = "insert into BillTbl values('{0}', {1}, {2})";
+                Query = string.Format(Query, DateTime.Now.ToString("yyyy-MM-dd"), Seller, Amount,Convert.ToInt32(Grdtotal));
+                Con.SetData(Query);
+            
+        }
+
         int Grdtotal = 0;
         int Amount;
         protected void AddToBillBtn_Click(object sender, EventArgs e)
@@ -86,7 +105,7 @@ namespace OnlineBookShop.Views.Seller
                     total);
                 ViewState["Bill"] = dt;
                 this.BindGrid();
-
+                UpdateStock();
                 
                 for (int i = 0; i<BillList.Rows.Count-1; i++)
                 {
@@ -99,6 +118,11 @@ namespace OnlineBookShop.Views.Seller
                 BQtyTb.Value = "";
                 Grdtotal = 0;
             }
+        }
+
+        protected void PrintBtn_Click(object sender, EventArgs e)
+        {
+            InsertBill();
         }
     }
 }

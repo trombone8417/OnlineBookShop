@@ -1,5 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Seller/SellerMaster.Master" AutoEventWireup="true" CodeBehind="Selling.aspx.cs" Inherits="OnlineBookShop.Views.Seller.Selling" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function PrintBill() {
+            var PGrid = document.getElementById('<%=BillList.ClientID%>');
+            PGrid.bordr = 0;
+            var PWin = window.open('', 'PrintGrid', 'left=100,top=100,width=1024,height=768,tollbar = 0,scrollbars = 1,status = 1,resizable = 1');
+            PWin.document.write(PGrid.outerHTML);
+            PWin.document.close();
+            PWin.focus();
+            PWin.print();
+            PWin.close();
+        }
+
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MyContent" runat="server">
     <div class="row">
@@ -78,7 +91,7 @@
                      <div class="col d-grid">
                          
                      <asp:Label ID="GrdtotalTb" runat="server" class="text-danger"></asp:Label>
-                         <asp:Button Text="Print" runat="server" ID="PrintBtn" class="btn-warning btn-block btn" OnClick="PrintBtn_Click" />
+                         <asp:Button Text="Print" runat="server" ID="PrintBtn" class="btn-warning btn-block btn" OnClientClick="PrintBill()" OnClick="PrintBtn_Click" />
                      </div>
                  </div>
         </div>
